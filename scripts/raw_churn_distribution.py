@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataset
-data = pd.read_csv('data/Telco-Customer-Churn.csv')
+data = pd.read_csv('data/Telco_Customer_Churn.csv')
 
 # Preview the dataset
 print(data.head())

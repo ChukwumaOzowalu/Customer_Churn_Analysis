@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
 # Load the dataset
-data = pd.read_csv('data/Telco-Customer-Churn.csv')
+data = pd.read_csv('data/Telco_Customer_Churn.csv')
 
 # Handle missing data
 print(data.isnull().sum())
