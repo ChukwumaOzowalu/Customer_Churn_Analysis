@@ -24,6 +24,13 @@ df['PhoneService'] = df['PhoneService'].map({'Yes': 1, 'No': 0})
 
 # Scales numerical features
 numerical_columns = ['tenure', 'MonthlyCharges', 'TotalCharges']
+for col in numerical_columns:
+    print(f"Unique values in '{col}':")
+    print(df[col].unique())
+for col in numerical_columns:
+    df[col] = pd.to_numeric(df[col], errors='coerce')
+# Fill missing values with the median of each column
+df[numerical_columns] = df[numerical_columns].fillna(df[numerical_columns].median())
 scaler = StandardScaler()
 df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 print("Scaled Data Example: ")
