@@ -10,3 +10,6 @@ print("\n", "Dataset Shape: ", df.shape, "\n")
 print("\n", "Column information: ", df.info(), "\n")
 print("\n", "Missing Values: ", df.isnull().sum(), "\n")
 print("\n", "First Few Rows: ", df.head(5), "\n")
+
+# Highlight key variable
+print(df['Churn'].value_counts())
