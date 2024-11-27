@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 
 # Load dataset
 file_path = "data/Raw_Customer_Churn.csv"
@@ -16,6 +14,3 @@ print(df['Churn'].value_counts())
 
 # Key observations:
 # (1) No missing values
-# (2) Churn:
-#       No     5174 ##########
-#       Yes    1869 ###-
